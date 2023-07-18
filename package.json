@@ -1,0 +1,43 @@
+{
+  "name": "phelt-language",
+  "displayName": "Phelt Language",
+  "description": "Syntax highlighting for the Phelt programming language.",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#9bc379",
+    "theme": "dark"
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benphelps/Phelt.git"
+  },
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ph",
+        "aliases": [
+          "phelt",
+          "ph"
+        ],
+        "extensions": [
+          ".ph"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ph",
+        "scopeName": "source.ph",
+        "path": "./syntaxes/ph.tmLanguage.json"
+      }
+    ]
+  }
+}
