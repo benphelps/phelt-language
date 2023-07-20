@@ -68,13 +68,22 @@
     "statements": {
       "patterns": [
         {
-          "match": "\\b(let)\\s*([a-zA-Z\\x{7f}-\\x{10ffff}_]?[a-zA-Z0-9\\x{7f}-\\x{10ffff}_]*)\\b",
+          "match": "(let)\\s(.*)=",
           "captures": {
             "1": {
               "name": "storage.type.ph"
             },
             "2": {
-              "name": "support.variable.ph"
+              "patterns": [
+                {
+                  "match": "([a-zA-Z\\x{7f}-\\x{10ffff}_][a-zA-Z0-9\\x{7f}-\\x{10ffff}_]?)",
+                  "captures": {
+                    "1": {
+                      "name": "variable.other.ph"
+                    }
+                  }
+                }
+              ]
             }
           }
         },
