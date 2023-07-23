@@ -29,7 +29,7 @@
       "patterns": [
         {
           "name": "keyword.control.ph",
-          "match": "\\b(if|else|while|for|return|and|or|break|continue|switch|case|default)\\b"
+          "match": "\\b(if|else|do|while|for|return|and|or|break|continue|switch|case|default)\\b"
         },
         {
           "name": "constant.language.null.ph",
